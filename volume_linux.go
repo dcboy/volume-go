@@ -24,7 +24,7 @@ func cmdEnv() []string {
 
 func getVolumeCmd() []string {
 	if useAmixer {
-		return []string{"amixer", "get", "DAC"}
+		return []string{"amixer", "get", "\"Line Out\""}
 	}
 	return []string{"pactl", "list", "sinks"}
 }
